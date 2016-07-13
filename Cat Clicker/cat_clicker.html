@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+	h1 {
+		text-align: center;
+	}
+	img {
+		max-width: 500px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h2 {
+		text-align: center;
+	}
+	h3 {
+		text-align: center;
+	}
+</style>
+<h1>Cat Clicker</h1>
+<h2>How many times can you click the cat?</h2>
+<img id="pic" src="kitten.jpg" alt="kitten">
+
+
+<h3 id="counter">You have clicked the cat 0 times.</h3>
+
+<script>
+document.getElementById("pic").addEventListener("click", displayDate);
+var countClicks = 1
+function displayDate() {
+    document.getElementById("counter").innerHTML = "You have clicked the cat " + countClicks++ + " times.";
+}
+</script>
+
+</body>
+</html>
